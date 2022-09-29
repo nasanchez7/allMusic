@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import SongContainer from "../containers/SongContainer";
 import Buscador from "./Buscador";
 
 const Nav = () => {
@@ -26,7 +27,13 @@ const Nav = () => {
                         <i className='bx bxs-music'></i>
                         <li>Artistas</li>
                     </div>
-                </Link>  
+                </Link>
+                <Link>
+                    <div className="item">
+                        <i className='bx bxs-playlist'></i>
+                        <li>Playlist</li>
+                    </div>
+                </Link>   
                 <Link>
                     <div className="item">
                         <i className='bx bxs-heart'></i>
@@ -34,14 +41,7 @@ const Nav = () => {
                     </div>
                 </Link>  
             </ul>
-            <div className="descriptionContainer">
-                <div className="description">
-                    <p>Encuentra las canciones de tus artistas favoritos
-                    en allMusic.
-                    </p>
-                    <button>Iniciar sesion</button>
-                </div>
-            </div>
+            <SongContainer/>
         </nav>
     )
 

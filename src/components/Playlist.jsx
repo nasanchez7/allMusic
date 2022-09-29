@@ -3,7 +3,6 @@ const Playlists = ({playlists}) => {
 
     return(
         <div className="playlistContainer">
-            <h3>Top Playlist</h3>
             <div className="playlistList">
                 {playlists.map((p, index)=>{
                     return(
@@ -15,7 +14,6 @@ const Playlists = ({playlists}) => {
                     )
                 })}
             </div>
-            
         </div>
     )
 }
