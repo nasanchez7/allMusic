@@ -37,7 +37,7 @@ const Nav = () => {
                 <Link>
                     <div className="item">
                         <i className='bx bxs-heart'></i>
-                        <li>Favoritos</li>
+                        <li>Estaciones</li>
                     </div>
                 </Link>  
             </ul>
