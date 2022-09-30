@@ -18,7 +18,6 @@ const InicioContainer = () => {
         const info = await fetch(`http://api.napster.com/v2.2/stations${apiKey}&limit=5`);
         const data = await info.json();
         setTopEstaciones(data.stations)
-        console.log(topEstaciones);
     }
 
 
