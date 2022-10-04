@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import MusicContext from "../context/MusicContext";
 
-const Songs = ({canciones}) => {
+const PlaylistSongs = ({songs}) => {
 
     const music = useContext(MusicContext);
 
@@ -9,11 +9,11 @@ const Songs = ({canciones}) => {
         <table className="songsList">
             <tbody>
                 <tr>
-                    <th>TOP CANCIONES</th>
+                    <th>CANCIONES</th>
                     <th></th>
-                    <th>ALBUM</th>
+                    <th>ARTISTA</th>
                 </tr>
-                 {canciones?.map((c, index)=>{
+                 {songs?.map((c, index)=>{
                     return(
                         <tr key={index} className="song">
                             <th className="nameSong">
@@ -21,22 +21,21 @@ const Songs = ({canciones}) => {
                                     music.setSong(c.previewURL)
                                     music.setInfoSong({
                                         ...music.infoSong,
-                                        song: c.name,
+                                        song: c.albumName,
                                         artist: c.artistName,
-                                        album: c.albumName
+                                        album: c.artistName
                                     })
                                 }}></i>
-                                <h3>{c.name}</h3>
+                                <h3>{c.albumName}</h3>
                             </th>
-                            <th> {c.artistName} </th>
-                            <th>{c.albumName}</th>
+                            <th></th>
+                            <th>{c.artistName}</th>
                         </tr>
                     )
             })} 
             </tbody>
         </table>
     )
-
 }
 
-export default Songs;
+export default PlaylistSongs;

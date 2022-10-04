@@ -1,30 +1,127 @@
 .artistContainer{
     overflow: hidden;
-    .artistaContainer{
-        .songsList{
-            overflow-y: scroll;
-            height: 230px;
-            .song{
+    overflow-y: scroll;
+    height: 100vh;
+    .infoArtista{
+        display: flex;
+        align-items: center;
+        padding: 80px 10px;
+        height: 50%;
+        position: fixed;
+        width: 100%;
+        z-index: 2;
+        .img{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: black;
+            margin-left: 150px;
+            margin-right: 50px;
+        }
+        h3{
+            font-size: 40px;
+            font-weight: 800;
+            color: white;
+        }
+        .icons{
+            display: flex;
+            align-items: center;
+            .mix{
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
-                padding: 10px 20px;
+                justify-content: center;
+                text-align: center;
+                border: none;
                 background-color: $colorPrimario;
-                margin: 10px;
-                border-radius: 10px;
-                .top{
-                    display: flex;
-                    h3{
-                        padding: 0px;
-                        margin-left: 10px;
+                border-radius: 30px;
+                width: 100px;
+                padding: 0px 25px;
+                margin-right: 20px;
+                cursor: pointer;
+                h3{
+                    font-size: 15px;
+                    font-weight: 600;
+                    color: white;
+                }
+                i{
+                    font-size: 15px;
+                    margin-left: 10px;
+                    color: white;
+                }
+            }
+            .heart{
+                border: 1px solid $colorPrimario;
+                padding: 5px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                i{
+                    font-size: 25px;
+                    color: $colorPrimario;
+                }
+            }
+        }
+    }
+    .opcionesArtista{
+        display: flex;
+        border-bottom:1px solid rgba(211, 211, 211, 0.504);
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        a{  
+            font-size: 20px;
+            text-decoration: none;
+            color: white;
+            margin-left: 50px;
+            cursor: pointer;
+        }
+        a:hover{
+            border-bottom:3px solid $colorPrimario;
+            transition: 0.3s;
+        }
+    }
+    .artistaContainer{
+        position: relative;
+        .infoArtistaDos{
+            position: absolute;
+            top: 320px;
+            z-index: 1;
+            width: 100%;
+            table{
+                text-align: left;
+            }
+            .songsList{
+                height: 100%;
+                width: 100%;
+                padding: 30px;
+                .song{
+                    border-bottom: 1px solid lightgray;
+                    th{
+                        font-weight: 400;
+                    }
+                    .nameSong{
+                        display: flex;
+                        align-items: center;
+                        i{
+                            font-size: 25px;
+                            margin: 15px;
+                            cursor: pointer;
+                        }
+                        h3{
+                            font-weight: 400;
+                            font-size: 20px;
+                        }
                     }
                 }
-                .play{
-                    i{
-                        font-size: 30px;
-                        cursor: pointer;
-                    }
+                .song:hover{
+                    background-color: lightgrey;
+                    transition: 0.3s;
                 }
+            }
+            .biografia{
+                padding: 20px;
             }
         }
         h3{
@@ -33,21 +130,23 @@
         .infoArtista{
             display: flex;
             align-items: center;
-            padding: 20px 10px;
-            border-bottom:1px solid lightgray;
-            img{
-                height: 240px;
-                width: 240px;
+            padding: 80px 10px;
+            height: 50%;
+            position: fixed;
+            width: 100%;
+            z-index: 2;
+            .img{
+                width: 200px;
+                height: 200px;
                 border-radius: 50%;
-                -webkit-box-shadow: 0px 0px 9px -6px #000000; 
-                box-shadow: 0px 0px 9px -6px #000000;
-                margin-right: 35px;
-                margin-left: 80px;
+                background-color: black;
+                margin-left: 150px;
+                margin-right: 50px;
             }
             h3{
-                font-size: 50px;
+                font-size: 40px;
                 font-weight: 800;
-                color: $colorLetras;
+                color: white;
             }
             .icons{
                 display: flex;
@@ -61,16 +160,16 @@
                     background-color: $colorPrimario;
                     border-radius: 30px;
                     width: 100px;
-                    padding: 5px 0px;
+                    padding: 0px 25px;
                     margin-right: 20px;
                     cursor: pointer;
                     h3{
-                        font-size: 20px;
-                        font-weight: 400;
+                        font-size: 15px;
+                        font-weight: 600;
                         color: white;
                     }
                     i{
-                        font-size: 20px;
+                        font-size: 15px;
                         margin-left: 10px;
                         color: white;
                     }
@@ -90,7 +189,24 @@
                 }
             }
         }
-
+        .opcionesArtista{
+            display: flex;
+            border-bottom:1px solid rgba(211, 211, 211, 0.504);
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            a{  
+                font-size: 20px;
+                text-decoration: none;
+                color: white;
+                margin-left: 50px;
+                cursor: pointer;
+            }
+            a:hover{
+                border-bottom:3px solid $colorPrimario;
+                transition: 0.3s;
+            }
+        }
     }
 
 

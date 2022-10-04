@@ -31,15 +31,31 @@ const InicioContainer = () => {
     return (
         <div className="inicioContainer">
             <div className="topTitulo">
-                <h3>Top playlist</h3>
+                <h3>Top 5 playlist</h3>
                 <a href="#">Ver todas</a>
             </div>
-            {playlist === undefined ? "Cargando" : <Playlists playlists={playlist}/>}
+            {playlist === undefined ?  
+            <div className="cargaContainer">
+                <div className="card"></div>
+                <div className="card"></div>
+                <div className="card"></div>
+                <div className="card"></div>
+                <div className="card"></div>
+            </div>
+            : <Playlists playlists={playlist}/>}
             <div className="topTitulo">
                 <h3>Top 5 estaciones</h3>
                 <a href="#">Ver todas</a>
             </div>
-            {topEstaciones === undefined ? "Cargando" :  <TopEstaciones estaciones={topEstaciones}/>}
+            {topEstaciones === undefined ?  
+            <div className="cargaContainer">
+                <div className="card"></div>
+                <div className="card"></div>
+                <div className="card"></div>
+                <div className="card"></div>
+                <div className="card"></div>
+            </div>
+            :  <TopEstaciones estaciones={topEstaciones}/>}
         </div>
     )
 
