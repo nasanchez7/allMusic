@@ -22,13 +22,13 @@ const Nav = () => {
                         <li>Inicio</li>
                     </div>
                 </Link>  
-                <Link>
+                <Link to={`/artist/korn`}>
                     <div className="item">
                         <i className='bx bxs-music'></i>
                         <li>Artistas</li>
                     </div>
                 </Link>
-                <Link>
+                <Link to={'/playlist/pp.225974698'}>
                     <div className="item">
                         <i className='bx bxs-playlist'></i>
                         <li>Playlist</li>
