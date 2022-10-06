@@ -1,0 +1,56 @@
+@media screen and (max-width: 890px){
+
+    .grillas{
+        grid-template-columns: 200px auto;
+    }
+
+    .inicioContainer{
+        .decoracion{
+            img{
+                display: none;
+            }
+        }
+    }
+
+    .playlistContainer{
+        .playlistInfoContainer{
+            .infoPlaylist{
+                align-items: flex-start;
+                flex-direction: column;
+                height: auto;
+                padding: 10px;
+                flex-wrap: wrap;
+                .img{
+                    margin-left: 0px;
+                    margin-right: 0px;
+                }
+            }
+            .infoPlaylistDos{
+                top: 330px;
+            }
+        }
+
+    }
+
+    .artistContainer{
+        .artistaContainer{
+            .infoArtista{
+                height: auto;
+                align-items: flex-start;
+                padding: 50px 10px;
+                flex-direction: column;
+                .img{
+                    margin-left: 0px;
+                    margin-right: 0px;
+                }
+            }
+            .infoArtistaDos{
+                top: 400px;
+            }
+            .opcionesArtista{
+                display: none;
+            }
+        }
+    }
+
+}
