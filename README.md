@@ -1,6 +1,6 @@
 # OpenMarket
 
-- [AllMusic](https://openmarketecommerce.netlify.app/ "AllMusic") es una Aplicacion de Musica totalmente funcional echo con ReactJs y con la API de Napster.
+- [AllMusic](https://openmarketecommerce.netlify.app/ "AllMusic") es una Aplicacion de Musica totalmente funcional echa con ReactJs y con la API de Napster.
 
 ## Funcionalidades
 
