@@ -21,8 +21,7 @@ const PlaylistInfo = ({playlistInfo, tracks, img}) => {
         <div className="playlistInfoContainer">
             {img === undefined ? "Cargando" :
             <div className="infoPlaylist" style={{
-                backgroundColor: "white"
-                ,backgroundPosition: 'top',
+                backgroundPosition: 'top',
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat'  
             }} >

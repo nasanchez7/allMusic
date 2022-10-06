@@ -13,6 +13,7 @@
             width: 100%;
             z-index: 2;
             border-bottom: 1px solid lightgray;
+            background-color: white;
             .img{
                 width: 200px;
                 height: 200px;
@@ -81,6 +82,9 @@
                     padding: 30px;
                     .song{
                         border-bottom: 1px solid lightgray;
+                        a{
+                            color: $colorLetras;
+                        }
                         th{
                             font-weight: 400;
                         }

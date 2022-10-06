@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 import MusicContext from "../context/MusicContext";
 
 const PlaylistSongs = ({songs}) => {
@@ -18,6 +19,7 @@ const PlaylistSongs = ({songs}) => {
                         <tr key={index} className="song">
                             <th className="nameSong">
                                 <i className='bx bx-play-circle' onClick={()=>{
+                                    console.log(c)
                                     music.setSong(c.previewURL)
                                     music.setInfoSong({
                                         ...music.infoSong,
@@ -29,7 +31,9 @@ const PlaylistSongs = ({songs}) => {
                                 <h3>{c.albumName}</h3>
                             </th>
                             <th></th>
-                            <th>{c.artistName}</th>
+                            <Link to={`/artist/${c.artistId}`}>
+                                <th>{c.artistName}</th>
+                            </Link>
                         </tr>
                     )
             })} 

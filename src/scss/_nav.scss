@@ -4,6 +4,7 @@ nav{
     border-right: 1px solid lightgrey;
     justify-content: space-between;
     height: 100vh;
+    overflow: hidden;
     .logoBuscador{
         display: flex;
         flex-direction: column;
@@ -17,6 +18,9 @@ nav{
     .logo{
         display: flex;
         align-items: center;
+        background: linear-gradient(#5236ff,#8ca3aded);
+        background-clip: text;
+        color: transparent;  
         h3{
             font-weight: 800;
             font-size: 30px;

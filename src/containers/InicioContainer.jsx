@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import InicioDecoracion from "../components/InicioDecoracion";
 import Playlists from "../components/Playlist";
 import TopEstaciones from "../components/TopEstaciones";
 
@@ -30,9 +31,10 @@ const InicioContainer = () => {
 
     return (
         <div className="inicioContainer">
+            <h3>Inicio</h3>
+            <InicioDecoracion/>
             <div className="topTitulo">
-                <h3>Top 5 playlist</h3>
-                <a href="#">Ver todas</a>
+                <h3>Playlists</h3>
             </div>
             {playlist === undefined ?  
             <div className="cargaContainer">
@@ -44,8 +46,7 @@ const InicioContainer = () => {
             </div>
             : <Playlists playlists={playlist}/>}
             <div className="topTitulo">
-                <h3>Top 5 estaciones</h3>
-                <a href="#">Ver todas</a>
+                <h3>Estaciones</h3>
             </div>
             {topEstaciones === undefined ?  
             <div className="cargaContainer">

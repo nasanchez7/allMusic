@@ -7,8 +7,8 @@
 
 .inicioContainer{
     padding: 20px;
-    overflow: hidden;
     overflow-y: scroll;
+    height: 100vh;
     .topTitulo{
         display: flex;
         align-items: center;
@@ -48,7 +48,7 @@
                         font-size: 15px;
                         padding: 15px;
                     }
-                    h4{
+                    h4{ 
                         color: white;
                         position: absolute;
                         bottom: -100%;
@@ -84,7 +84,9 @@
                 position: relative;
                 cursor: pointer;
                 margin-right: 30px;
-                h3{
+
+                h3{ 
+                    
                     color: white;
                     position: absolute;
                     bottom: 0;
@@ -108,7 +110,7 @@
                 transition: 0.3s;
                 bottom: 30px;
             }
-            h4{
+            h4{ 
                 transition: 0.3s;
                 bottom: 0;
             }
@@ -126,7 +128,52 @@
             border-radius: 10px;
         }
     }
-
+    .decoracion{
+        position: relative;
+        display: flex;
+        margin-top: 20px;
+        width: 100%;
+        border-radius: 15px;
+        background: rgb(219,244,255);
+        background: linear-gradient(329deg, rgba(219,244,255,1) 0%, rgba(82,54,255,1) 100%);
+        padding: 25px;
+        .info{
+            width: 60%;
+            h4{
+                color: white;
+                font-weight: 400;
+                font-size: 13px;
+                margin-bottom: 10px;
+            }
+            h2{
+                font-weight: 600;
+                color: white;
+                font-size: 35px;
+                margin-bottom: 10px;
+            }
+            p{
+                font-weight: 400;
+                color: white;
+                font-size: 17px;
+                margin-bottom: 10px;
+            }
+            button{
+                background-color: white;
+                color: #5236ff;
+                padding: 15px;
+                border-radius: 25px;
+                border: none;
+                font-weight: 600;
+                cursor: pointer;
+            }
+        }
+        img{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 430px;
+        }
+    }
 }
 
 .inicioContainer::-webkit-scrollbar {

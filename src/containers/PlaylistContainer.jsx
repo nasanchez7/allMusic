@@ -32,17 +32,6 @@ const PlaylistContainer = () => {
 
     return(
         <div className="playlistContainer">
-            {/* <h3>playlist</h3>
-            <h4> {playlistId} </h4>
-            <button onClick={()=>{
-                console.log(playlistTracks)
-            }}>tracks</button>
-            <button onClick={()=>{
-                console.log(playlistInfo)
-            }}>info</button>
-            <button onClick={()=>{
-                console.log(img)
-            }}>img</button> */}
             {playlistInfo === undefined ? "Cargando" : 
             <PlaylistInfo playlistInfo={playlistInfo} img={img} tracks={playlistTracks}/>
             }
