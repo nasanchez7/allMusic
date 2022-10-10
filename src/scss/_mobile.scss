@@ -1,10 +1,51 @@
 @media screen and (max-width: 890px){
 
     .grillas{
-        grid-template-columns: 200px auto;
+        grid-template-rows: 250px auto;
+        grid-template-columns: auto !important;
+        position: relative;
+    }
+
+    nav{
+        height: 300px;
+        position: fixed;
+        width: 100%;
+        z-index: 3;
+        background-color: white;
+
+        .logoBuscador{
+            flex-direction: row;
+            justify-content: center;
+            a{
+                margin-right: 15px;
+            }
+        }
+        ul{
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            flex-wrap: wrap;
+            li{
+                margin-right: 20px;
+            }
+        }
+        .songContainer{
+            display: flex;
+            align-items: center;
+            .infoSong{
+                flex-direction: row;
+                width: 50%;
+            }
+            audio{
+                width: 40%;
+            }
+        }
     }
 
     .inicioContainer{
+        position: absolute;
+        top: 300px;
         .decoracion{
             img{
                 display: none;
@@ -15,6 +56,8 @@
     .playlistContainer{
         .playlistInfoContainer{
             .infoPlaylist{
+                position: absolute;
+                top: 317px;
                 align-items: flex-start;
                 flex-direction: column;
                 height: auto;
@@ -26,7 +69,7 @@
                 }
             }
             .infoPlaylistDos{
-                top: 330px;
+                top: 630px;
             }
         }
 
@@ -35,6 +78,8 @@
     .artistContainer{
         .artistaContainer{
             .infoArtista{
+                position: absolute;
+                top: 317px;
                 height: auto;
                 align-items: flex-start;
                 padding: 50px 10px;
@@ -45,7 +90,7 @@
                 }
             }
             .infoArtistaDos{
-                top: 400px;
+                top: 720px;
             }
             .opcionesArtista{
                 display: none;
