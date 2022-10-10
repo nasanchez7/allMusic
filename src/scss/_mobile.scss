@@ -32,7 +32,7 @@
         }
         .songContainer{
             display: flex;
-            align-items: center;
+            justify-content: center;
             .infoSong{
                 flex-direction: row;
                 width: 50%;
