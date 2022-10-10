@@ -24,9 +24,11 @@ const InicioContainer = () => {
 
 
     useEffect(()=>{
-        getTopArtist();
-        getTopEstaciones();
+
     },[])
+
+    getTopArtist();
+    getTopEstaciones();
 
 
     return (
